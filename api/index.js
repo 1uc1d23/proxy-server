@@ -241,13 +241,8 @@ app.get('/_status', (req, res) => {
 });
 
 // =========================
-// START
+// EXPORT FOR VERCEL
 // =========================
 
-app.listen(PORT, () => {
+export default app;
 
-    console.log(
-        `Proxy running on ${PORT}`
-    );
-
-});
