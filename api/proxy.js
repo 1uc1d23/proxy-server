@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const targetUrl = `https://popembed.net{id}`;
+    const targetUrl = `https://max.popembed.net/movie-tv/neon/movie/${id}`;
 
     // 3. Fetch the data from the target API server-side
     const apiResponse = await fetch(targetUrl, {
