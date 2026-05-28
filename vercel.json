@@ -1,6 +1,9 @@
 {
   "version": 2,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.js" }
+  "routes": [
+    {
+      "src": "/api/movie/(?<id>[^/]+)",
+      "dest": "/api/proxy.js?id=$id"
+    }
   ]
 }
